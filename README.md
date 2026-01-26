@@ -1,37 +1,83 @@
- Sistema de Gerenciamento de Oficina Mecânica
+Projeto Banco de Dados – Sistema de Oficina Mecânica
 
-- Objetivo
+- Descrição do Projeto
 
-Desenvolver um sistema para controle e gerenciamento de ordens de serviço em uma oficina mecânica, permitindo registrar clientes, veículos, equipes de mecânicos, serviços, peças e calcular automaticamente os valores de cada OS.
+Este projeto tem como objetivo a modelagem e implementação de um banco de dados relacional para o gerenciamento de uma oficina mecânica, contemplando clientes, veículos, mecânicos, equipes, ordens de serviço, serviços e peças.
 
-
-- Descrição
-
-Este projeto permite que uma oficina mecânica organize suas ordens de serviço, associando veículos a equipes de mecânicos, detalhando serviços e peças utilizados. O sistema registra clientes, veículos, mecânicos e equipes, além de calcular o valor total de cada ordem de serviço com base na mão de obra e peças.
+O desenvolvimento iniciou-se a partir da definição do escopo do sistema, seguido pela criação do Diagrama Entidade-Relacionamento Estendido (EER), garantindo organização, normalização e integridade dos dados antes da implementação física no SGBD.
 
 
-- Principais funcionalidades:
+- Objetivos de Aprendizagem
 
-Cadastro de Clientes e Veículos;
+Ao concluir este projeto, foi possível:
 
-Cadastro de Mecânicos e Equipes;
+Compreender e aplicar conceitos de modelagem de dados com EER
 
-Registro de Ordens de Serviço (OS) com serviços e peças;
+Criar tabelas com chaves primárias, estrangeiras e restrições
 
-Cálculo automático do valor da OS;
+Trabalhar com relacionamentos 1:N e N:N
 
-Controle de status e datas de conclusão das OS.
+Utilizar diferentes tipos de JOINs em SQL
 
-
-- Tecnologias
-
-Modelagem de Banco de Dados EER
-
-Conceitos de Banco Relacional e N:M
+Simular um cenário real de negócio utilizando dados fictícios
 
 
-- Diagrama EER
+- Escopo do Sistema
 
-O sistema foi modelado com as seguintes entidades principais:
+O sistema modelado contempla:
 
-Cliente, Veículo, Mecânico, Equipe, OS, Serviço, Peça, ItemOS.
+Cadastro de Clientes
+
+Cadastro de Veículos vinculados aos clientes
+
+Cadastro de Mecânicos e suas especialidades
+
+Formação de Equipes de trabalho
+
+Registro de Ordens de Serviço
+
+Associação de Serviços e Peças às ordens de serviço
+
+Toda a estrutura foi inicialmente representada em um Diagrama EER, servindo como base para a criação das tabelas no banco de dados.
+
+
+- Estrutura do Banco de Dados
+
+Principais tabelas criadas:
+
+Client
+
+Vehicle
+
+Mechanic
+
+Team
+
+TeamComposition
+
+ServiceOrder
+
+Service
+
+Parts
+
+RequiredService
+
+RequiredPart
+
+
+
+- Tecnologias Utilizadas
+
+SQL
+
+MySQL 
+
+Modelagem EER
+
+Diagramação de Banco de Dados
+
+
+- Conclusão
+
+Este projeto permitiu consolidar conhecimentos fundamentais de modelagem e implementação de banco de dados, simulando um cenário real e aplicando boas práticas desde o diagrama EER até as consultas SQL.
